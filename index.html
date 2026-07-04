@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adooo</title>
 </head>
-<body>
-    
-    <input type="number" placeholder="input num 1" id="txt_input1">
-     <input type="number" placeholder="input num 2" id="txt_input2">
-    
-     <h1 id="heading1">Out Put Tag</h1>
-   
-     <input type="button" value=" + " onclick="add()">
-    <input type="button" value=" - " onclick="sub()">
-    <!-- <input type="button" value="change to previout text" onclick="change_previous_tag()"> -->
 
+<body>
+    <h1 id="heading1">Customer details</h1>
+
+    <table id="tblCustomers">
+        <tr>
+            <td>name</td>
+            <td>Address</td>
+            <td>Age</td>
+            <td>email</td>
+            <td>Salary</td>
+        </tr>
+    </table>
+
+    <!-- <input type="text" placeholder="name" id="txtName">
+    <input type="text" placeholder="Address" id="txtAddrss">
+    <input type="number" placeholder="Age" id="txtAge">
+    <input type="email" placeholder="email" id="txtEmail">
+    <input type="number" placeholder="Salary" id="txtSalary"> -->
+
+
+
+    <!-- <input type="button" value=" Add " onclick="btnAddCustomerOnAction() -->
+    <input type="button" value=" Add " onclick="loadTable()">
+    
+    
     <script src="app.js"></script>
 </body>
+
 </html>
