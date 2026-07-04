@@ -42,7 +42,7 @@
 //                         id: 2,
 //                         name: "variant2",
 //                         price: 20
-                        
+
 //                     }
 //                 ]
 //             }, 
@@ -74,12 +74,56 @@
 // let heading=document.getElementById("heading1");
 // console.log(heading);
 // heading.innerText="Nethra";
-count=0;
-function change_h1() {
-    console.log("first name clicked");
-    heading1.innerText="nethra : "+(++count);    
+// count=0;
+// function change_h1() {
+//     console.log("first name clicked");
+//     heading1.innerText="nethra : "+(++count);    
+// }
+// function change_h2() {
+//     console.log("last name clicked");
+//     heading1.innerText="perera : "+(--count);
+// }
+
+
+
+function add() {
+    let num1 = document.getElementById("txt_input1");
+    //console.log(txtInput.value);
+    let userInput1=num1.value;
+    console.log(userInput1);
+    
+    let num2 = document.getElementById("txt_input2");
+    //console.log(txtInput.value);
+    let userInput2=num2.value;
+    console.log(userInput2);
+    
+    let addition=(Number(userInput1)+Number(userInput2));
+    console.log(addition);
+    
+    let heading = document.getElementById("heading1");
+    heading.innerText = addition;
 }
-function change_h2() {
-    console.log("last name clicked");
-    heading1.innerText="perera : "+(--count);
+
+function sub() {
+    let num1 = document.getElementById("txt_input1");
+    //console.log(txtInput.value);
+    let userInput1=num1.value;
+    console.log(userInput1);
+    
+    let num2 = document.getElementById("txt_input2");
+    //console.log(txtInput.value);
+    let userInput2=num2.value;
+    console.log(userInput2);
+    
+    let substraction=0;
+    if (userInput1>userInput2) {
+       substraction=(Number(userInput1)-Number(userInput2)); 
+    }else{
+        substraction=(Number(userInput2)-Number(userInput1)); 
+    }
+    // let substraction=(Number(userInput1)-Number(userInput2));
+    console.log(substraction);
+    
+    let heading = document.getElementById("heading1");
+    heading.innerText = substraction;
 }
