@@ -27,6 +27,12 @@ console.log(headingTag);
 // change h1 object's inner text 
 headingTag.innerText="Nethra Perera";
 
+//change heading when clicking the button
+function changeHeading() {
+    console.log("clicked");
+    headingTag.innerText="button is clicked...!";
+}
+
 
 
 
