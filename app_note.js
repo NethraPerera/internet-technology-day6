@@ -28,9 +28,10 @@ console.log(headingTag);
 headingTag.innerText="Nethra Perera";
 
 //change heading when clicking the button
+let count=0;
 function changeHeading() {
     console.log("clicked");
-    headingTag.innerText="button is clicked...!";
+    headingTag.innerText="button is clicked...!"+count++;
 }
 
 
