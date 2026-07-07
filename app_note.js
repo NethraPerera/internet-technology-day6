@@ -89,6 +89,7 @@ function substractionOnAction() {
 }
 
 // -------------------------------------------------------------------------------------------
+let customerList=[];
 //  saving user inputs using java script
 function btnAddCustomerOnAction() {
     let txtName=document.getElementById("txtName").value;
@@ -98,11 +99,23 @@ function btnAddCustomerOnAction() {
     let txtSalary=document.getElementById("txtSalary").value;
     let txtAge=document.getElementById("txtAge").value;
 
-    console.log(txtName);
-    console.log(txtId);
-    console.log(txtAddress);
-    console.log(txtEmail);
-    console.log(txtSalary);
-    console.log(txtAge);
+    // console.log(txtName);
+    // console.log(txtId);
+    // console.log(txtAddress);
+    // console.log(txtEmail);
+    // console.log(txtSalary);
+    // console.log(txtAge);
+    
+    let customer={
+        name: txtName,
+        id:txtId,
+        address:txtAddress,
+        email:txtEmail,
+        salary:txtSalary,
+        age:txtAge
+    }
+    customerList.push(customer);
+    console.log(customerList);
     
 }
+
