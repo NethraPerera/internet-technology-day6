@@ -13,12 +13,17 @@
 // }
 // console.log(orders);
 
+
+// -------------------------------------------------------------------------------------------
+
 // ======== dom malipulation ============
 
-console.log(document);  //shows the HTML document as an Object in the console
-console.log(document.title); //shows the title of the HTML document in the console
-document.write("hi");   // shows hi on the web page
-document.write("<h1>hi</h1>"); // shows hi as a heading
+// console.log(document);  //shows the HTML document as an Object in the console
+// console.log(document.title); //shows the title of the HTML document in the console
+// document.write("hi");   // shows hi on the web page
+// document.write("<h1>hi</h1>"); // shows hi as a heading
+
+// -------------------------------------------------------------------------------------------
 
 // get the h1 element(object) and assign it to a variable
 let headingTag=document.getElementById("heading");
@@ -44,4 +49,15 @@ function decreseValue() {
     headingTag.innerText="Perera : "+(--count);
     console.log("--count");
 }
+
+// -------------------------------------------------------------------------------------------
+
+// change heading as the user input 
+function changeHeading() {
+    let txtInputValue=txtInput.value;
+    //console.log(txtInputTag);
+    headingTag.innerText=txtInputValue;    
+}
+
+// -------------------------------------------------------------------------------------------
 
