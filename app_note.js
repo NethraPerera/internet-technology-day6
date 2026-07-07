@@ -29,11 +29,19 @@ headingTag.innerText="Nethra Perera";
 
 //change heading when clicking the button
 let count=0;
-function changeHeading() {
-    console.log("clicked");
-    headingTag.innerText="button is clicked...!"+count++;
+// function changeHeading() {
+//     console.log("clicked");
+//     headingTag.innerText="button is clicked...!"+count++;
+// }
+
+// change heading and the clicking count of + and - buttons
+function increseValue() {
+    headingTag.innerText="Nethra : "+(++count);
+    console.log("++count");
 }
 
-
-
+function decreseValue() {
+    headingTag.innerText="Perera : "+(--count);
+    console.log("--count");
+}
 
