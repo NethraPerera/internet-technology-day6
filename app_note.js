@@ -26,14 +26,14 @@
 // -------------------------------------------------------------------------------------------
 
 // get the h1 element(object) and assign it to a variable
-let headingTag=document.getElementById("heading");
-console.log(headingTag);
+let headingTag = document.getElementById("heading");
+//console.log(headingTag);
 
 // change h1 object's inner text 
-headingTag.innerText="Nethra Perera";
+//headingTag.innerText="Nethra Perera";
 
 //change heading when clicking the button
-let count=0;
+let count = 0;
 // function changeHeading() {
 //     console.log("clicked");
 //     headingTag.innerText="button is clicked...!"+count++;
@@ -41,12 +41,12 @@ let count=0;
 
 // change heading and the clicking count of + and - buttons
 function increseValue() {
-    headingTag.innerText="Nethra : "+(++count);
+    headingTag.innerText = "Nethra : " + (++count);
     console.log("++count");
 }
 
 function decreseValue() {
-    headingTag.innerText="Perera : "+(--count);
+    headingTag.innerText = "Perera : " + (--count);
     console.log("--count");
 }
 
@@ -54,10 +54,36 @@ function decreseValue() {
 
 // change heading as the user input 
 function changeHeading() {
-    let txtInputValue=txtInput.value;
+    let txtInputValue = txtInput.value;
     //console.log(txtInputTag);
-    headingTag.innerText=txtInputValue;    
+    headingTag.innerText = txtInputValue;
 }
 
 // -------------------------------------------------------------------------------------------
 
+//addition and substrction
+function additionOnAction() {
+    console.log(document.getElementById("inputNumber1").value);
+    let num1 = Number(document.getElementById("inputNumber1").value);
+    let num2 = Number(document.getElementById("inputNumber2").value);
+
+    console.log(num1 + num2);
+    //console.log(parseInt(num1)+parseInt(num2));
+
+    document.getElementById("output").innerText = (Number(num1) + Number(num2));
+
+}
+function substractionOnAction() {
+    console.log(document.getElementById("inputNumber2").value);
+    let num1 = Number(document.getElementById("inputNumber1").value);
+    let num2 = Number(document.getElementById("inputNumber2").value);
+
+    if (num1 > num2) {
+        console.log(num1 - num2);
+        document.getElementById("output").innerText = num1 - num2;
+    } else {
+        console.log(num2 - num1);
+        document.getElementById("output").innerText = num2 - num1;
+    }
+    //console.log(parseInt(num1)+parseInt(num2));
+}
