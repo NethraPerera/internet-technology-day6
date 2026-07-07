@@ -87,3 +87,22 @@ function substractionOnAction() {
     }
     //console.log(parseInt(num1)+parseInt(num2));
 }
+
+// -------------------------------------------------------------------------------------------
+//  saving user inputs using java script
+function btnAddCustomerOnAction() {
+    let txtName=document.getElementById("txtName").value;
+    let txtId=document.getElementById("txtId").value;
+    let txtAddress=document.getElementById("txtAddress").value;
+    let txtEmail=document.getElementById("txtEmail").value;
+    let txtSalary=document.getElementById("txtSalary").value;
+    let txtAge=document.getElementById("txtAge").value;
+
+    console.log(txtName);
+    console.log(txtId);
+    console.log(txtAddress);
+    console.log(txtEmail);
+    console.log(txtSalary);
+    console.log(txtAge);
+    
+}
