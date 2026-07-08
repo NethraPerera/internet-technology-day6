@@ -128,21 +128,36 @@ function loadTableOnAction() {
     //console.log(customer);
 
     let body = "";
+    //---------------- step 3 ---------------------
     for (let i = 0; i < customerList.length; i++) {
         body += `
         <tr>
-            <td>Nethra</td>
-            <td>c001</td>
-            <td>Gampaha</td>
-            <td>22</td>
-            <td>20000</td>
-            <td>adaf</td>
+            <td>${customerList[i].name}</td>
+            <td>${customerList[i].id}</td>
+            <td>${customerList[i].address}</td>
+            <td>${customerList[i].age}</td>
+            <td>${customerList[i].salary}</td>
+            <td>${customerList[i].email}</td>
         </tr>
         `
-
     }
     tblCustomers.innerHTML =body; 
+    // //---------------- step 2 ---------------------
+    // for (let i = 0; i < customerList.length; i++) {
+    //     body += `
+    //     <tr>
+    //         <td>Nethra</td>
+    //         <td>c001</td>
+    //         <td>Gampaha</td>
+    //         <td>22</td>
+    //         <td>20000</td>
+    //         <td>adaf</td>
+    //     </tr>
+    //     `
+    // }
+    //tblCustomers.innerHTML =body; 
 
+    //--------- step 1 ------------
     // tblCustomers.innerHTML += `
     //     <tr>
     //         <td>Nethra</td>
