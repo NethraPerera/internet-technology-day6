@@ -89,15 +89,15 @@ function substractionOnAction() {
 }
 
 // -------------------------------------------------------------------------------------------
-let customerList=[];
+let customerList = [];
 //  saving user inputs using java script
 function btnAddCustomerOnAction() {
-    let txtName=document.getElementById("txtName").value;
-    let txtId=document.getElementById("txtId").value;
-    let txtAddress=document.getElementById("txtAddress").value;
-    let txtEmail=document.getElementById("txtEmail").value;
-    let txtSalary=document.getElementById("txtSalary").value;
-    let txtAge=document.getElementById("txtAge").value;
+    let txtName = document.getElementById("txtName").value;
+    let txtId = document.getElementById("txtId").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+    let txtAge = document.getElementById("txtAge").value;
 
     // console.log(txtName);
     // console.log(txtId);
@@ -105,17 +105,38 @@ function btnAddCustomerOnAction() {
     // console.log(txtEmail);
     // console.log(txtSalary);
     // console.log(txtAge);
-    
-    let customer={
+
+    let customer = {
         name: txtName,
-        id:txtId,
-        address:txtAddress,
-        email:txtEmail,
-        salary:txtSalary,
-        age:txtAge
+        id: txtId,
+        address: txtAddress,
+        email: txtEmail,
+        salary: txtSalary,
+        age: txtAge
     }
     customerList.push(customer);
     console.log(customerList);
-    
+
 }
 
+// -------------------------------------------------------------------------------------------
+// adding user inputs to a table using java script
+
+function loadTableOnAction() {
+    let tblCustomers = document.getElementById("tblCustomers");
+    //console.log(customer);
+
+    tblCustomers.innerHTML += `
+        <tr>
+            <td>Nethra</td>
+            <td>c001</td>
+            <td>Gampaha</td>
+            <td>22</td>
+            <td>20000</td>
+            <td>adaf</td>
+        </tr>
+    `
+
+    console.log(tblCustomers);
+
+}
