@@ -117,6 +117,7 @@ function btnAddCustomerOnAction() {
     customerList.push(customer);
     console.log(customerList);
 
+    loadTableOnAction();
 }
 
 // -------------------------------------------------------------------------------------------
@@ -126,7 +127,9 @@ function loadTableOnAction() {
     let tblCustomers = document.getElementById("tblCustomers");
     //console.log(customer);
 
-    tblCustomers.innerHTML += `
+    let body = "";
+    for (let i = 0; i < customerList.length; i++) {
+        body += `
         <tr>
             <td>Nethra</td>
             <td>c001</td>
@@ -135,7 +138,21 @@ function loadTableOnAction() {
             <td>20000</td>
             <td>adaf</td>
         </tr>
-    `
+        `
+
+    }
+    tblCustomers.innerHTML =body; 
+
+    // tblCustomers.innerHTML += `
+    //     <tr>
+    //         <td>Nethra</td>
+    //         <td>c001</td>
+    //         <td>Gampaha</td>
+    //         <td>22</td>
+    //         <td>20000</td>
+    //         <td>adaf</td>
+    //     </tr>
+    // `
 
     console.log(tblCustomers);
 
